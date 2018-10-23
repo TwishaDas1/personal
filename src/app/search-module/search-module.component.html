@@ -1,0 +1,169 @@
+  <br/> <br/> <br/> <br/>
+   <div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+        <div>
+            <div class="tabbable">
+                <ul class="nav nav-tabs padding-6 tab-color-blue background-blue" id="myTab4">
+                    <li>
+                        <a data-toggle="tab" [routerLink]="['/home']" style="font-family: serif;font-size: 14px;width:165px"><b><i class="ace-icon fa fa-home home-icon"></i>Home</b></a>
+                    </li>
+                    <li *ngIf="paramId == 'studyInfo'" class="active">
+                        <a data-toggle="tab" href="/searchModule/studyInfo" style="font-family: serif;font-size: 14px;width:110px"><b><i class="ace-icon fa fa-book" style="color:black"></i>Study Info</b></a>
+                    </li>
+                    <li *ngIf="paramId != 'studyInfo'">
+                        <a data-toggle="tab" href="/searchModule/studyInfo" style="font-family: serif;font-size: 14px;width:110px"><b><i class="ace-icon fa fa-book" style="color:black"></i>Study Info</b></a>
+                    </li>
+                    <li *ngIf="paramId == 'businessRule'" class="active">
+                        <a data-toggle="tab" href="/searchModule/businessRule" style="font-family: serif;font-size: 14px;width:230px"><b><i class="ace-icon fa fa-briefcase" style="color:black"></i>Business Rule Configuration</b></a>
+                    </li>
+                    <li *ngIf="paramId != 'businessRule'">
+                        <a data-toggle="tab" href="/searchModule/businessRule" style="font-family: serif;font-size: 14px;width:230px"><b><i class="ace-icon fa fa-briefcase" style="color:black"></i>Business Rule Configuration</b></a>
+                    </li>
+                    <li *ngIf="paramId == 'jobExecution'" class="active">
+                        <a data-toggle="tab" href="/searchModule/jobExecution" style="font-family: serif;font-size: 14px;width:210px"><b><i class="ace-icon fa fa-tasks" style="color:black"></i>Job Execution</b></a>
+                    </li>
+                    <li *ngIf="paramId != 'jobExecution'">
+                        <a data-toggle="tab" href="/searchModule/jobExecution" style="font-family: serif;font-size: 14px;width:210px"><b><i class="ace-icon fa fa-tasks" style="color:black"></i>Job Execution</b></a>
+                    </li>
+                    <li *ngIf="paramId == 'dqw'" class="active">
+                        <a data-toggle="tab" href="/searchModule/dqw" style="font-family: serif;font-size: 14px;width:200px"><b><i class="ace-icon fa fa-check-square" style="color:black"></i>Data Quality Workbench</b></a>
+                    </li>
+                    <li *ngIf="paramId != 'dqw'">
+                        <a data-toggle="tab" href="/searchModule/dqw" style="font-family: serif;font-size: 14px;width:200px"><b><i class="ace-icon fa fa-check-square" style="color:black"></i>Data Quality Workbench</b></a>
+                    </li>
+                    <li *ngIf="paramId == 'analytics'" class="active">
+                        <a data-toggle="tab" href="/searchModule/analytics" style="font-family: serif;font-size: 14px;width:200px"><b><i class="ace-icon fa fa-connectdevelop" style="color:black"></i>Analytics</b></a>
+                    </li>
+                    <li *ngIf="paramId != 'analytics'">
+                        <a data-toggle="tab" href="/searchModule/analytics" style="font-family: serif;font-size: 15px;width:200px"><b><i class="ace-icon fa fa-connectdevelop" style="color:black"></i>Analytics</b></a>
+                    </li>
+                </ul>
+                <!-- Enter Study Info -->
+                <div *ngIf="paramId == 'studyInfo'">
+                <form name="form"  #f="ngForm" novalidate>
+                  <fieldset>
+                    <div class="tab-content">
+                      <div ng-if="paramId == studyInfo" id="studyInfo" class="tab-pane in active">
+                        <div style='text-align: left'><h6 style="font-family: serif;font-size: 16px;"><b>Enter Study Info - </b></h6></div><br/><br/>
+                          <!-- Study Info SEARCH -->
+                          <div class="row">
+                              <div class="col-xs-12 col-sm-2">
+                                  <div class="form-group">
+                                      <label for="form-field-8" style="font-family: serif;font-size: 14px;"><b>Study ID</b></label>
+                                      <input type="text" class="form-control" placeholder="Enter Study Number" name="studyID" [(ngModel)]="searchStudy.studyID"   />
+                                  </div>
+                              </div>
+
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="form-group">
+                                    <label for="form-field-8" style="font-family: serif;font-size: 14px;"><b>Study Title</b></label>
+                                    <input type="text" id="form-field-1" name="title" placeholder="Enter Study Title" class="form-control"  [(ngModel)]="searchStudy.title"/>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="form-group">
+                                    <label for="form-field-8" style="font-family: serif;font-size: 14px;"><b>Phase</b></label>
+                                    <select class="form-control"  id="form-field-select-1" name="phase" [(ngModel)]="searchStudy.phase">
+                                        <option value="undefined" disabled selected style="display: none;">Select an Option</option>
+   					                            <option value="Phase1">Phase 1</option>
+                                        <option value="Phase2">Phase 2</option>
+                                        <option value="Phase3">Phase 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="form-group">
+                                    <label for="form-field-8" style="font-family: serif;font-size: 14px;"><b>Status</b></label>
+                                    <select class="form-control" id="form-field-select-1" name="status" [(ngModel)]="searchStudy.status">
+                                      <option value="undefined" disabled selected style="display: none;">Select an Option</option>
+   					                            <option value="active">Active</option>
+                                        <option value="Inactive">Inactive</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="form-group">
+                                    <label for="form-field-8" style="font-family: serif;font-size: 14px;"><b>Study Source</b></label>
+                                    <input type="text" id="form-field-1" name="source" placeholder="Enter Study Source" class="form-control" [(ngModel)]="searchStudy.source"/>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                             <div>
+                               <button (click)="fetch(searchStudy)" class="btn btn-success" style="background-color : #012169;font-size: 14px;color : white;font-family: serif;"><b>Search</b></button> &nbsp;
+                                <!--a href="/searchModule/studyInfo" class="btn btn-success" style="font-size: 14px;font-family: serif;color : white;background-color : #012169;"><b>Clear</b></a-->
+                               <button (click)="clear()" class="btn btn-success" style="font-size: 14px;font-family: serif;color : white;background-color : #012169;"><b>Clear</b></button> &nbsp;
+
+                               <!--div style="float: right;" >
+                                    <button class="btn btn-success">
+                                      <i class="ace-icon fa fa-plus-circle bigger-110"></i>
+                                      <span class="bigger-11">Add New Study</span>
+                                    </button>
+                               </div-->
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              <br/>
+              <div class="panel panel-default">
+                <div>
+                  <!--h6 style="text-align: left;font-family: serif;font-size: 14px;">&nbsp;&nbsp;<b>Study Details</b></h6-->
+
+                      <kendo-grid
+                          [data]="view | async"
+                          [height]="400"
+                          [pageSize]="gridState.take" [skip]="gridState.skip" [sort]="gridState.sort"
+                          [pageable]="true" [sortable]="true"
+                          (dataStateChange)="onStateChange(searchStudy, $event)"
+                          (edit)="editHandler($event, searchStudy)" (remove)="removeHandler($event)"
+                          (add)="addHandler($event)"
+                          [style.backgroundColor] = "black"
+                        >
+                        <ng-template  kendoGridToolbarTemplate >
+                          <div style="">
+                            <label style="margin-top:3px;float: left;text-align: left;font-family: serif;font-size: 14px;color:black"><b>&nbsp;&nbsp;Study Details </b></label>&nbsp;
+                            <button kendoGridAddCommand [primary]="true" style="border-color: white;float: right;color : white;background-color : #012169;font-size : 16px;font-family: serif;"><b>Add New Study</b></button>
+
+                          </div>
+                        </ng-template>
+                        <kendo-grid-column [headerStyle]="{'font-family': 'serif','font-size': '14px','background-color': '#86bc25','font-weight':'bold','color':'black'}" field="studyID" title="Study ID"></kendo-grid-column>
+                        <kendo-grid-column [headerStyle]="{'font-family': 'serif','font-size': '14px','background-color': '#86bc25','font-weight':'bold','color':'black'}" field="title"  title="Study Title"></kendo-grid-column>
+                        <kendo-grid-column [headerStyle]="{'font-family': 'serif','font-size': '14px','background-color': '#86bc25','font-weight':'bold','color':'black'}" field="phase" title="Phase"></kendo-grid-column>
+                        <kendo-grid-column [headerStyle]="{'font-family': 'serif','font-size': '14px','background-color': '#86bc25','font-weight':'bold','color':'black'}" field="status" title="Status"></kendo-grid-column>
+                        <kendo-grid-column [headerStyle]="{'font-family': 'serif','font-size': '14px','background-color': '#86bc25','font-weight':'bold','color':'black'}" field="therapeuticArea" title="Therapeutic Area"></kendo-grid-column>
+                        <kendo-grid-column [headerStyle]="{'font-family': 'serif','font-size': '14px','background-color': '#86bc25','font-weight':'bold','color':'black'}" field="source" title="Source"></kendo-grid-column>
+                        <kendo-grid-command-column [headerStyle]="{'font-family': 'serif','font-size': '14px','background-color': '#86bc25','font-weight':'bold','color':'black'}" title="Actions" width="220">
+                            <ng-template kendoGridCellTemplate>
+                                <button kendoGridEditCommand [primary]="true" style="color : white;background-color : #012169;border-color: white;font-family: serif;font-size: 14px;"><b>Edit</b></button>
+                                <button kendoGridRemoveCommand style="font-family: serif;font-size: 14px;"><b>Delete</b></button>
+                            </ng-template>
+                        </kendo-grid-command-column>
+                      </kendo-grid>
+
+                      <kendo-grid-edit-form [model]="editDataItem" [isNew]="isNew"
+                          (save)="saveHandler($event)"
+                          (cancel)="cancelHandler()">
+                      </kendo-grid-edit-form>
+                </div>
+              </div>
+            </div>
+          </div>    <!-- /.row -->      <!-- /.page-content -->
+        </div>
+        <div>
+          <div *ngIf="paramId == 'jobExecution'">
+            <app-job-execution></app-job-execution>
+          </div>
+        </div>
+        <div>
+          <div *ngIf="paramId == 'businessRule'">
+            <app-business-rule></app-business-rule>
+          </div>
+        </div>
+      </div>      <!-- /.main-content -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

@@ -1,0 +1,57 @@
+ <div class="col-sm-12 col-sm-offset-0">
+   <div class="container" >
+     <div class="row">
+       <div class="span12 pull-right" >
+         <h4 style="font-family: serif;"><b>Welcome User | Logout</b></h4>
+       </div>
+     </div>
+   </div>
+</div>
+   <div class="col-sm-12 col-sm-offset-0">
+
+   <div class="container">
+
+       <div class="span12 pull-left" >
+         <h4 style="font-family: serif;" ><b>Please select a module -</b></h4>
+       </div>
+
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-xs-4">
+         <button type="button" class="span3 btn-block btn-lg"   [routerLink]="['/searchModule', 'studyInfo']">
+           <img src="../assets/images/Study_info.jpg" alt="Study Info" style="width: 280px;height:140px;">
+           <br /><span ><b>Study Info </b></span>
+         </button>
+        </div>
+        <div class="col-xs-4">
+          <button type="button" class="span3 btn-block btn-lg" [routerLink]="['/searchModule', 'businessRule']">
+            <img src="../assets/images/business_rules_3.jpg" alt="Business Rule Configuration" style="width: 280px;height:140px;">
+            <br /><span ><b>Business Rule Configuration</b></span>
+          </button>
+        </div>
+        <div class="col-xs-4">
+          <button type="button" class="btn-block btn-lg" [routerLink]="['/searchModule', 'jobExecution']">
+            <img src="../assets/images/Job_Execution_6.jpg" alt="Job Execution" style="width: 280px;height:140px;">
+            <br /><span ><b>Job Execution</b></span>
+          </button>
+        </div>
+      </div>
+      <div class="space"></div>
+      <div class="row">
+        <div class="col-xs-4">
+          <button type="button" class="btn-block btn-lg" [routerLink]="['/searchModule', 'dqw']">
+            <img src="../assets/images/Data_Quality.jpg" alt="Data Quality Workbench" style="width: 280px;height:140px;">
+            <br /><span ><b>Data Quality Workbench </b></span>
+          </button>
+        </div>
+        <div class="col-xs-4">
+          <button type="button" class="btn-block btn-lg" [routerLink]="['/searchModule', 'analytics']">
+            <img src="../assets/images/Analytics2.png" alt="Analytics" style="width: 280px;height:140px;">
+            <br /><span ><b>Analytics</b></span>
+          </button>
+        </div>
+      </div>
+      <div class="space"></div>
+    </div>
+  </div>

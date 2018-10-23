@@ -1,0 +1,90 @@
+<style>
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    text-align: left;
+}
+</style>
+<div class="panel panel-default">
+<div>
+  <form name="jobForm"  #f="ngForm" novalidate>
+    <fieldset>
+      <div class="tab-content">
+        <div class="tab-pane in active">
+          <div class="space"></div>
+          <div class="space"></div>
+          <div style='text-align: left'><h6><b>Enter Study Data to import Path to SDTM Matrix template</b></h6></div>
+          <div class="space"></div>
+          <div class="space"></div>
+
+            <!-- Job Execution SEARCH -->
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="form-group">
+                        <label for="form-field-8"><b>Select Study</b></label>
+                          <select class="form-control" id="form-field-select-1" name="study" [(ngModel)]="searchJob.study"
+                          style="border-radius: 4px;border: 1px solid #adadad;padding: 6px 12px; margin-bottom: 0; font-size: 14px;
+                          font-weight: 400;line-height: 1.52857143;text-align: left;vertical-align: middle;">
+                              <option value="Calerie">Calerie</option>
+                              <option value="Status1">Status1</option>
+                          </select>
+                    </div>
+                </div>
+
+              <div class="col-xs-12 col-sm-4">
+                  <div class="form-group">
+                      <label for="form-field-8"><b>Select SDTM Domain</b></label>
+                      <!--<select class="form-control" id="form-field-select-1" name="domain" [(ngModel)]="searchJob.domain">
+                          <option value="Demographics">Demographics</option>
+                          <option value="Adverse Events">Adverse Events</option>
+                          <option value="Concomitant Medications">Concomitant Medications</option>
+                      </select>-->
+                      <ng-multiselect-dropdown
+                      [placeholder]="'Choose'"
+                      [data]="dropdownList"
+                      [(ngModel)]="selectedItems"
+                      [settings]="dropdownSettings"
+                      (onSelect)="onItemSelect($event)"
+                      (onSelectAll)="onSelectAll($event)"
+                       name="domain"
+                      >
+                    </ng-multiselect-dropdown>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+               <div>
+                 <br><br><br>
+                 <button  (click)="searchJobExecution(searchJob,selectedItems)" class="btn btn-success" style="font-size: 13px;"><b>Search</b></button>
+                 &nbsp; &nbsp;
+                 <button  (click)="reset(searchJob,selectedItems,f)" class="btn btn-inverse" style="font-size: 13px;color : black;background-color : #86BC60;"><b>Clear</b></button>
+               </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  <br/>
+  <h6 style="text-align: left">&nbsp;&nbsp;<b>Job Status</b></h6>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Study Title</th>
+        <th>SDTM Domain</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td class="text-align: left;">{{item.study}}</td>
+        <td class="text-align: left;">{{item.domain}}</td>
+        <td class="text-align: left;">{{item.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+</div>

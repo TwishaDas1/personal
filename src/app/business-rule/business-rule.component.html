@@ -1,0 +1,54 @@
+<div>
+  <form name="form"  #f="ngForm" novalidate>
+    <fieldset>
+      <div class="tab-content">
+          <div style='text-align: left'><h6 style="font-family: serif;font-size: 16px;">
+            <b>Select Study info to import “Path to SDTM” matrix template - </b></h6></div><br/><br/>
+            <!-- Business Rule SEARCH -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-2">
+                  <div class="form-group">
+                      <label for="form-field-8" style="font-family: serif;font-size: 14px;"><b>Select Study</b></label>
+                      <select class="form-control"  id="form-field-select-1" name="brStudy" [(ngModel)]="searchBRStudy.brStudy">
+                          <option value="undefined" disabled selected style="display: none;">Select an Option</option>
+                          <option value="NCT0001">NCT0001</option>
+                          <option value="NCT0002">NCT0002</option>
+                          <option value="NCT0003">NCT0003</option>
+                      </select>
+                  </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-2">
+                  <div class="form-group">
+                      <label for="form-field-8" style="font-family: serif;font-size: 14px;"><b>Select Therapeutic Area</b></label>
+                      <select class="form-control" id="form-field-select-1" name="brTherapeuticArea" [(ngModel)]="searchBRStudy.brTherapeuticArea">
+                        <option value="undefined" disabled selected style="display: none;">Select an Option</option>
+                          <option value="TherapeuticArea1">Therapeutic Area 1</option>
+                          <option value="TherapeuticArea2">Therapeutic Area 2</option>
+                          <option value="TherapeuticArea3">Therapeutic Area 3</option>
+                      </select>
+                  </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-2">
+                  <div class="form-group">
+                    <label for="form-field-8" style="font-family: serif;font-size: 14px;"><b>Select SDTM Domain</b></label>
+                    <select class="form-control" id="form-field-select-1" name="sdtmDomain" [(ngModel)]="searchBRStudy.sdtmDomain">
+                      <option value="undefined" disabled selected style="display: none;">Select an Option</option>
+                        <option value="domain1">Domain 1</option>
+                        <option value="domain2">Domain 2</option>
+                        <option value="domain3">Domain 3</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="col-xs-12">
+               <div>
+                 <button (click)="fetch(searchStudy)" class="btn btn-success" style="background-color : #012169;font-size: 14px;color : white;font-family: serif;"><b>Search</b></button> &nbsp;
+                 <button (click)="clear()" class="btn btn-success" style="font-size: 14px;font-family: serif;color : white;background-color : #012169;"><b>Clear</b></button> &nbsp;
+                </div>
+              </div>
+            </div>
+      </div>
+    </fieldset>
+  </form>
+</div>

@@ -1,0 +1,297 @@
+{
+  "Student": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "miss",
+        "first": "rosa",
+        "last": "christensen"
+      },
+      "location": {
+        "street": "Rosasasdasd",
+        "city": "bederssssdsfd",
+        "state": "danmark",
+        "postcode": "123456"
+      },
+      "country": "China",
+      "email": "rosa.christensen@example.com",
+      "login": {
+        "username": "mamtha",
+        "password": "mamtha",
+        "salt": "3IC7Z6hp",
+        "md5": "74f5b867debfbdc24d5e6bc29f694a06",
+        "sha1": "caff1b0d623b7b85ae1c49edf54ec1b64f8f12a9",
+        "sha256": "2fb84e400063c99bd8a9e3b361ad596413902c732d1f3b176b81901e9b37519a",
+        "role": "admin"
+      },
+      "dob": "1950-02-09 03:38:03",
+      "registered": "2016-06-12 09:24:24",
+      "phone": "26476585",
+      "cell": "55540232",
+      "id": "1",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/53.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/53.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/53.jpg"
+      },
+      "nat": "DK"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "mrs",
+        "first": "rosa",
+        "last": "hansen"
+      },
+      "location": {
+        "street": "111111",
+        "city": "pandrup",
+        "state": "sj�lland",
+        "postcode": 56950
+      },
+      "country": "Monaco",
+      "email": "rosa.hansen@example.com",
+      "login": {
+        "username": "Twisha",
+        "password": "Twisha",
+        "salt": "fFSr5uwl",
+        "md5": "e2c1f3c4329f583f56be829733a23b9c",
+        "sha1": "655f224332fb74bf84e2216ec2a2204786988604",
+        "sha256": "7595dd472981f577cbfff98b94d30d74ea1270ff097a1cb2068fdb694cfb6b03"
+      },
+      "dob": "1978-08-14 01:17:06",
+      "registered": "2010-12-12 00:13:12",
+      "phone": "18502293",
+      "cell": "17211062",
+      "id": "2",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/10.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/10.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/10.jpg"
+      },
+      "nat": "DK"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "ms",
+        "first": "emilie",
+        "last": "david"
+      },
+      "location": {
+        "street": "3842 place des 44 enfants d'izieu",
+        "city": "perpignan",
+        "state": "bas-rhin",
+        "postcode": 77661
+      },
+      "country": "Poland",
+      "email": "emilie.david@example.com",
+      "login": {
+        "username": "purplefrog208",
+        "password": "whiplash",
+        "salt": "8vX6PF4j",
+        "md5": "b5e5729a29f4e493dec8e4ded3577a0f",
+        "sha1": "a65e3f7afbcbdf9ac8041f763d5822e8d0ffce77",
+        "sha256": "d66c07164a6124e5dee0ab29206453821ca65b206d40954e482a8418f15ab1d8"
+      },
+      "dob": "1993-02-08 00:59:07",
+      "registered": "2004-08-29 11:15:22",
+      "phone": "02-08-79-82-53",
+      "cell": "06-88-05-01-57",
+      "id": "3",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/88.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/88.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/88.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "frederik",
+        "last": "johansen"
+      },
+      "location": {
+        "street": "3335 svalevej",
+        "city": "�lstykke",
+        "state": "nordjylland",
+        "postcode": 31518
+      },
+      "country": "USA",
+      "email": "frederik.johansen@example.com",
+      "login": {
+        "username": "heavysnake206",
+        "password": "concorde",
+        "salt": "RnacrWXg",
+        "md5": "1c7eff70077ff9b9143452318e489cdc",
+        "sha1": "76f99d07502ffc30752ce24a677a445691e93051",
+        "sha256": "f3a3f51188af648403317d51edc57ac42d657e2f60d08ad179090582bd04805d"
+      },
+      "dob": "1953-09-10 23:52:14",
+      "registered": "2006-03-23 15:45:32",
+      "phone": "30360669",
+      "cell": "24158852",
+      "id": "4",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/99.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/99.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/99.jpg"
+      },
+      "nat": "DK"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "oscar",
+        "last": "morris"
+      },
+      "location": {
+        "street": "1661 royal roaddsddas",
+        "city": "taupo",
+        "state": "waikatoss",
+        "postcode": 15826
+      },
+      "country": "France",
+      "email": "oscar.morris@example.com",
+      "login": {
+        "username": "purplepeacock839",
+        "password": "popopo",
+        "salt": "K8nINFFk",
+        "md5": "3f8690b3ebd24fd9b82c9772c899019b",
+        "sha1": "c286b1775ee8b95835709d25c13fdb36d532377c",
+        "sha256": "2315bfd38b47b58c23df7c9da02e19eeca64088c5fd7d49fc1db38a2ebefa264"
+      },
+      "dob": "1959-08-12 15:22:43",
+      "registered": "2009-09-13 01:39:01",
+      "phone": "(407)-466-7497",
+      "cell": "(210)-600-4037",
+      "id": "5",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/85.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/85.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/85.jpg"
+      },
+      "nat": "NZ"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "timmothy",
+        "last": "watkins"
+      },
+      "location": {
+        "street": "1258 manchester road",
+        "city": "derby",
+        "state": "central",
+        "postcode": "KV2A 6RB"
+      },
+      "country": "Germany",
+      "email": "timmothy.watkins@example.com",
+      "login": {
+        "username": "bigwolf935",
+        "password": "iscool",
+        "salt": "2I3PvJ4C",
+        "md5": "58d1e401d15115f0a7c2dbd164e68ae3",
+        "sha1": "5aa0aab2d7ee6d82afa379f9d2dd61aee205637e",
+        "sha256": "fa06d89ae90e540c40865bdabc8488bdb7e3fcf7e74ca574354046695edb4446"
+      },
+      "dob": "1955-01-09 07:04:43",
+      "registered": "2009-01-06 22:56:19",
+      "phone": "01157 51042",
+      "cell": "0725-416-652",
+      "id": "6",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/61.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/61.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/61.jpg"
+      },
+      "nat": "GB"
+    }
+  ],
+  "StudyDetails": [
+    {
+      "studyID": "123",
+      "title": "abc",
+      "phase": "Phase1",
+      "status": "Active",
+      "therapeuticArea": "Cardiovascular",
+      "source": "Duke",
+      "id": "1"
+    },
+    {
+      "studyID": "NCT1002",
+      "title": "Calerie1",
+      "phase": "Phase2",
+      "status": "Active",
+      "therapeuticArea": "Dermatology",
+      "source": "Duke1",
+      "id": "2"
+    },
+    {
+      "studyID": "NCT1003",
+      "title": "Digitalis",
+      "phase": "Phase3",
+      "status": "Active",
+      "therapeuticArea": "Diabetes",
+      "source": "Duke2",
+      "id": "3"
+    },
+    {
+      "studyID": "NCT1004",
+      "title": "Digitalis1",
+      "phase": "Phase4",
+      "status": "Inactive",
+      "therapeuticArea": "Haematology",
+      "source": "Duke3",
+      "id": "4"
+    },
+    {
+      "studyID": "NCT1005",
+      "title": "Digitalis2",
+      "phase": "Phase5",
+      "status": "Inactive",
+      "therapeuticArea": "CNS",
+      "source": "Duke4",
+      "id": "5"
+    },
+    {
+      "studyID": "aa",
+      "title": "as",
+      "phase": "AS",
+      "status": "ASDS",
+      "therapeuticArea": "asd",
+      "source": "sd",
+      "id": "PZ4Ot8j"
+    },
+    {
+      "id": "sad",
+      "studyID": "asd",
+      "title": "dass",
+      "phase": "dasd",
+      "status": "dasds",
+      "therapeuticArea": "dasd",
+      "source": "asds"
+    }
+  ],
+  "JobDetails": [
+    {
+      "study": "Calerie",
+      "domain": "Demographics",
+      "status": "Runnning"      
+    },
+    {
+     "study": "Calerie",
+      "domain": "Adverse Events",
+      "status": "Completed"  
+    },
+    {
+      "study": "Calerie",
+      "domain": "Concomitant Medications",
+      "status": "Waiting"  
+    }
+	]
+}
